@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct Test: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @State private var textToCopy = ""
+      private let characterLimit = 9
 
-#Preview {
-    Test()
+      var body: some View {
+          VStack {
+           
+              TextField("Enter text", text: $textToCopy)
+                  .textFieldStyle(RoundedBorderTextFieldStyle())
+                  .frame(width: 320)
+                  .keyboardType(.numberPad)
+                  .padding(.leading, 22.0)
+                  .onChange(of: textToCopy, perform: { value in
+                      if value.count > characterLimit {
+                          textToCopy = String(value.prefix(characterLimit))
+                      }
+                  })
+
+            
+          }
+      }
+
+  }
+
+
+struct Test_Previews: PreviewProvider {
+    static var previews: some View {
+        Test()
+    }
 }
