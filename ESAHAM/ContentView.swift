@@ -30,7 +30,7 @@ struct ContentView: View {
                 Image("Logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 250 )
+                    .frame(width: 300 )
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                             withAnimation {
