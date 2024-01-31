@@ -2,53 +2,93 @@
 //  ContentView.swift
 //  ESAHAM
 //
-//  Created by manar khaled on 11/07/1445 AH.
+//  Created by razan on 31/01/2024.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    @State var isHomeRootScreen = false
-    @State var scaleAmount: CGFloat = 1
-    @State private var isShowingMainView = false
-    
+struct CommunityView1: View {
     var body: some View {
-        VStack {
-            if isShowingMainView {
-                Boarding()
-                    .transition(.opacity) // Apply fade-in transition
-            } else {
-                
-            //    Color("greeen")
-                
-                Image("Home")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                .scaleEffect(scaleAmount)
-                    .frame(width: 200 )
-                
-                Image("Logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300 )
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                            withAnimation {
-                                isShowingMainView = true
-                            }
-                        }
-                    }
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        
-        
-        }
+        Text("")
     }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-                ContentView()
-        }
+}
+
+struct Plant1View: View {
+    var body: some View {
+        Text("")
+    }
+}
+
+struct TasksView: View {
+    var body: some View {
+        Text("")
+    }
+}
+
+
+
+struct ContentView: View {
+    // enum for Tabs, add other tabs if needed
+    enum Tab {
+        case community, plant, tasks, profile
     }
 
+    @State private var selectedTab: Tab = .community
+
+    var body: some View {
+        VStack(spacing: 0) {
+            ZStack {
+                TabView(selection: $selectedTab) {
+                    NavigationView {
+                        CommunityView()
+                            .navigationBarTitle("Community", displayMode: .inline)
+                    }
+                    .tabItem {
+                        Image(systemName: "person.3")
+                        Text("Community")
+                    }
+                    .tag(Tab.community)
+
+                    NavigationView {
+                       Plant1View()
+                            .navigationBarTitle("Plant", displayMode: .inline)
+                    }
+                    .tabItem {
+                        Image(systemName: "tree")
+                        Text("Plant")
+                    }
+                    .tag(Tab.plant)
+
+                    NavigationView {
+                        TasksView1()
+                            .navigationBarTitle("", displayMode: .inline)
+                    }
+                    .tabItem {
+                        Image(systemName: "flag")
+                        Text("Tasks")
+                    }
+                    .tag(Tab.tasks)
+
+                    
+                }
+                .edgesIgnoringSafeArea(.bottom)
+                .frame(maxHeight: .infinity)
+              
+               Rectangle()
+                  .frame(height: 1.0)
+                                   .foregroundColor(.gray)
+                                   .offset(y: 330)
+              
+                  
+               
+                    
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

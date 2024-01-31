@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct classView: View {
+struct ClassView: View {
     @State private var progress: Double = 0.0
     @State private var circleColor: Color = Color(hex: "80B63C")
     @State private var completedCircleColor: Color = Color(hex: "(9C8BD1") // تغيير هنا
@@ -197,7 +197,7 @@ struct classView: View {
 
 
 
-struct classView_Previews: PreviewProvider {
+struct ClassView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
