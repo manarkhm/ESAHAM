@@ -6,28 +6,28 @@
 //
 
 import SwiftUI
-struct ClassView: View {
+struct TasksView: View {
     @State private var progress: Double = 0.0
-    @State private var circleColor: Color = Color(hex: "80B63C")
-    @State private var completedCircleColor: Color = Color(hex: "(9C8BD1") // تغيير هنا
+    @State private var circleColor: Color = Color("PrimaryColor")
+    @State private var completedCircleColor: Color = Color("HighlightColor") // تغيير هنا
     @State private var animateCircle = false
     var body: some View {
         
         ZStack {
-            Color(hex: "FCFFFC")
+            Color("BackgroundColor")
                 .ignoresSafeArea()
             
             VStack {
                 Text("Class")
                     .font(.title)
-                    .foregroundColor(Color(red: 0.158, green: 0.274, blue: 0.0))
+                    .foregroundColor(Color("TextColor"))
                     .padding()
                 
                 HStack {
                     Text("Class 7/B")
                         .font(.title2)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(red: 0.158, green: 0.274, blue: 0.0))
+                        .foregroundColor(Color("TextColor"))
                         .padding()
                     
                     Spacer()
@@ -47,7 +47,7 @@ struct ClassView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 43, height: 43)
-                                .foregroundColor(Color(hex: "80B63C"))
+                                .foregroundColor(Color("PrimaryColor"))
                             
                             Image("imag2")
                                 .resizable()
@@ -62,8 +62,8 @@ struct ClassView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 43, height: 43)
-                                .foregroundColor(Color(hex: "80B63C"))
-                            
+                                .foregroundColor(Color("PrimaryColor"))
+
                             Image("imag3")
                                 .resizable()
                                 .foregroundColor(Color.white)
@@ -77,8 +77,8 @@ struct ClassView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 43, height: 43)
-                                .foregroundColor(Color(hex: "80B63C"))
-                            
+                                .foregroundColor(Color("PrimaryColor"))
+
                             Image("Image")
                                 .resizable()
                                 .foregroundColor(Color.white)
@@ -197,24 +197,6 @@ struct ClassView: View {
 
 
 
-struct ClassView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-extension Color {
-    init(hex: String) {
-        let scanner = Scanner(string: hex)
-        _ = scanner.scanString("#")
-        
-        var rgbValue: UInt64 = 0
-        scanner.scanHexInt64(&rgbValue)
-        
-        let red = Double((rgbValue & 0xFF0000) >> 16) / 255.0
-        let green = Double((rgbValue & 0x00FF00) >> 8) / 255.0
-        let blue = Double(rgbValue & 0x0000FF) / 255.0
-        
-        self.init(red: red, green: green, blue: blue)
-    }
+#Preview {
+    TasksView()
 }

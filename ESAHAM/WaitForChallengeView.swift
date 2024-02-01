@@ -13,7 +13,7 @@ struct User1: Identifiable {
     let name: String
 }
 
-struct TasksViewUser: View {
+struct WaitForChallengeView: View {
   
     @State private var userInputs: [String] = []
     @State private var users: [User] = [
@@ -104,8 +104,7 @@ struct UserCircleView1: View {
     }
 }
 
-struct TasksViewUser_Previews: PreviewProvider {
-    static var previews: some View {
-     ContentView()
-    }
+#Preview {
+    WaitForChallengeView()
 }
+

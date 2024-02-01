@@ -1,36 +1,12 @@
-//
-//  ContentView.swift
-//  ESAHAM
-//
-//  Created by razan on 31/01/2024.
-//
+import SwiftUI
+import Combine
+
 
 import SwiftUI
 
-struct CommunityView1: View {
-    var body: some View {
-        Text("")
-    }
-}
-
-struct Plant1View: View {
-    var body: some View {
-        Text("")
-    }
-}
-
-struct TasksView: View {
-    var body: some View {
-        Text("")
-    }
-}
-
-
-
 struct ContentView: View {
-    // enum for Tabs, add other tabs if needed
     enum Tab {
-        case community, plant, tasks, profile
+        case community, plant, tasks
     }
 
     @State private var selectedTab: Tab = .community
@@ -49,9 +25,11 @@ struct ContentView: View {
                     }
                     .tag(Tab.community)
 
+
                     NavigationView {
-                       Plant1View()
+                        MyPlantView()
                             .navigationBarTitle("Plant", displayMode: .inline)
+                            
                     }
                     .tabItem {
                         Image(systemName: "tree")
@@ -60,26 +38,23 @@ struct ContentView: View {
                     .tag(Tab.plant)
 
                     NavigationView {
-                        TasksView1()
-                            .navigationBarTitle("", displayMode: .inline)
+                        ChallengeView()
+                            .navigationBarTitle("Tasks", displayMode: .inline)
                     }
                     .tabItem {
                         Image(systemName: "flag")
                         Text("Tasks")
                     }
                     .tag(Tab.tasks)
-
-                    
                 }
-                .edgesIgnoringSafeArea(.bottom)
+                .edgesIgnoringSafeArea(.top)
                 .frame(maxHeight: .infinity)
+                .accentColor(Color("PrimaryColor"))
+
               
-               Rectangle()
-                  .frame(height: 1.0)
-                                   .foregroundColor(.gray)
-                                   .offset(y: 330)
-              
-                  
+                
+                Divider()
+                    .padding(.top, 650.0)
                
                     
             }

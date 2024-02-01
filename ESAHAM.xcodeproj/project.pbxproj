@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43F88D282B6A691700AC3367 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F88D272B6A691700AC3367 /* ClassView.swift */; };
+		43F88D282B6A691700AC3367 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F88D272B6A691700AC3367 /* TasksView.swift */; };
 		7BB21E302B5FD5E900673581 /* ESAHAMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB21E2F2B5FD5E900673581 /* ESAHAMApp.swift */; };
 		7BB21E322B5FD5E900673581 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB21E312B5FD5E900673581 /* LogoView.swift */; };
 		7BB21E342B5FD5EA00673581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB21E332B5FD5EA00673581 /* Assets.xcassets */; };
@@ -15,13 +15,18 @@
 		7BFB50552B60EA2A006DBAC7 /* Boarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFB50542B60EA2A006DBAC7 /* Boarding.swift */; };
 		A5DBE8552B6A704300FDE2AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE8542B6A704300FDE2AE /* ContentView.swift */; };
 		A5DBE8572B6A709600FDE2AE /* CoummunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE8562B6A709600FDE2AE /* CoummunityView.swift */; };
-		A5DBE8592B6A711200FDE2AE /* TasksView (Admin).swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE8582B6A711200FDE2AE /* TasksView (Admin).swift */; };
-		A5DBE85C2B6A761600FDE2AE /* TaskView1 (User).swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE85B2B6A761600FDE2AE /* TaskView1 (User).swift */; };
+		A5DBE8592B6A711200FDE2AE /* StartChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE8582B6A711200FDE2AE /* StartChallengeView.swift */; };
+		A5DBE85C2B6A761600FDE2AE /* WaitForChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE85B2B6A761600FDE2AE /* WaitForChallengeView.swift */; };
 		A5DBE8782B6AACC000FDE2AE /* NotoSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5DBE8772B6AACC000FDE2AE /* NotoSans.ttf */; };
+		EF2096392B6B868200A14D45 /* CreateChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2096342B6B868200A14D45 /* CreateChallengeView.swift */; };
+		EF20963F2B6B868200A14D45 /* ChooseMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2096352B6B868200A14D45 /* ChooseMonthView.swift */; };
+		EF2096412B6B868200A14D45 /* JoinChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF20962F2B6B868200A14D45 /* JoinChallengeView.swift */; };
+		EF2096422B6B868200A14D45 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF20962E2B6B868200A14D45 /* ChallengeView.swift */; };
+		EF2096452B6B887900A14D45 /* MyPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2096442B6B887900A14D45 /* MyPlantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43F88D272B6A691700AC3367 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
+		43F88D272B6A691700AC3367 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		7BB21E2C2B5FD5E900673581 /* ESAHAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESAHAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB21E2F2B5FD5E900673581 /* ESAHAMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESAHAMApp.swift; sourceTree = "<group>"; };
 		7BB21E312B5FD5E900673581 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
@@ -30,10 +35,15 @@
 		7BFB50542B60EA2A006DBAC7 /* Boarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boarding.swift; sourceTree = "<group>"; };
 		A5DBE8542B6A704300FDE2AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5DBE8562B6A709600FDE2AE /* CoummunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoummunityView.swift; sourceTree = "<group>"; };
-		A5DBE8582B6A711200FDE2AE /* TasksView (Admin).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TasksView (Admin).swift"; sourceTree = "<group>"; };
-		A5DBE85B2B6A761600FDE2AE /* TaskView1 (User).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskView1 (User).swift"; sourceTree = "<group>"; };
+		A5DBE8582B6A711200FDE2AE /* StartChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartChallengeView.swift; sourceTree = "<group>"; };
+		A5DBE85B2B6A761600FDE2AE /* WaitForChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitForChallengeView.swift; sourceTree = "<group>"; };
 		A5DBE8772B6AACC000FDE2AE /* NotoSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotoSans.ttf; sourceTree = "<group>"; };
 		A5DBE8792B6AACE000FDE2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF20962E2B6B868200A14D45 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		EF20962F2B6B868200A14D45 /* JoinChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinChallengeView.swift; sourceTree = "<group>"; };
+		EF2096342B6B868200A14D45 /* CreateChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeView.swift; sourceTree = "<group>"; };
+		EF2096352B6B868200A14D45 /* ChooseMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMonthView.swift; sourceTree = "<group>"; };
+		EF2096442B6B887900A14D45 /* MyPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +80,17 @@
 				A5DBE85A2B6A74D900FDE2AE /* Font */,
 				7BB21E2F2B5FD5E900673581 /* ESAHAMApp.swift */,
 				7BB21E312B5FD5E900673581 /* LogoView.swift */,
+				7BFB50542B60EA2A006DBAC7 /* Boarding.swift */,
 				A5DBE8542B6A704300FDE2AE /* ContentView.swift */,
 				A5DBE8562B6A709600FDE2AE /* CoummunityView.swift */,
-				A5DBE8582B6A711200FDE2AE /* TasksView (Admin).swift */,
-				A5DBE85B2B6A761600FDE2AE /* TaskView1 (User).swift */,
-				7BFB50542B60EA2A006DBAC7 /* Boarding.swift */,
-				43F88D272B6A691700AC3367 /* ClassView.swift */,
+				EF2096442B6B887900A14D45 /* MyPlantView.swift */,
+				43F88D272B6A691700AC3367 /* TasksView.swift */,
+				EF20962E2B6B868200A14D45 /* ChallengeView.swift */,
+				EF2096342B6B868200A14D45 /* CreateChallengeView.swift */,
+				EF2096352B6B868200A14D45 /* ChooseMonthView.swift */,
+				A5DBE8582B6A711200FDE2AE /* StartChallengeView.swift */,
+				EF20962F2B6B868200A14D45 /* JoinChallengeView.swift */,
+				A5DBE85B2B6A761600FDE2AE /* WaitForChallengeView.swift */,
 				7BB21E332B5FD5EA00673581 /* Assets.xcassets */,
 				7BB21E352B5FD5EA00673581 /* Preview Content */,
 			);
@@ -169,14 +184,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DBE85C2B6A761600FDE2AE /* TaskView1 (User).swift in Sources */,
+				EF2096452B6B887900A14D45 /* MyPlantView.swift in Sources */,
+				A5DBE85C2B6A761600FDE2AE /* WaitForChallengeView.swift in Sources */,
 				A5DBE8572B6A709600FDE2AE /* CoummunityView.swift in Sources */,
+				EF2096412B6B868200A14D45 /* JoinChallengeView.swift in Sources */,
 				7BB21E322B5FD5E900673581 /* LogoView.swift in Sources */,
 				A5DBE8552B6A704300FDE2AE /* ContentView.swift in Sources */,
+				EF2096422B6B868200A14D45 /* ChallengeView.swift in Sources */,
 				7BB21E302B5FD5E900673581 /* ESAHAMApp.swift in Sources */,
+				EF20963F2B6B868200A14D45 /* ChooseMonthView.swift in Sources */,
 				7BFB50552B60EA2A006DBAC7 /* Boarding.swift in Sources */,
-				A5DBE8592B6A711200FDE2AE /* TasksView (Admin).swift in Sources */,
-				43F88D282B6A691700AC3367 /* ClassView.swift in Sources */,
+				A5DBE8592B6A711200FDE2AE /* StartChallengeView.swift in Sources */,
+				43F88D282B6A691700AC3367 /* TasksView.swift in Sources */,
+				EF2096392B6B868200A14D45 /* CreateChallengeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

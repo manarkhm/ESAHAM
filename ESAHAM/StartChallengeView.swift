@@ -12,7 +12,7 @@ struct User: Identifiable {
     let name: String
 }
 
-struct TasksView1: View {
+struct StartChallengeView: View {
     @State private var userInputs: [String] = []
     @State private var users: [User] = [
         User(name: "Razan"),
@@ -186,9 +186,8 @@ struct TasksView1: View {
         static let buttonColor: Color = Color(UIColor(red: 0.27, green: 0.44, blue: 0.15, alpha: 1))
     }
 
-    struct TasksView1_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
+#Preview {
+    StartChallengeView()
+}
+
 
